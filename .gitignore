@@ -1,0 +1,20 @@
+# ملفات النظام
+.DS_Store
+Thumbs.db
+
+# ملفات التثبيت المؤقتة
+*.bak
+*.swp
+
+# ملفات اللوج
+*.log
+
+# مجلدات النظام أو البناء
+node_modules/
+vendor/
+.env
+.cache/
+.idea/
+.vscode/
+*.tar.gz
+*.zip
