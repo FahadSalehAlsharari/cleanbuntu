@@ -7,11 +7,13 @@
 ---
 
 ## 📌 نظرة عامة
+
 Cleanbuntu هي أداة صيانة شاملة لأنظمة Ubuntu/Linux مكتوبة بالكامل بلغة **Bash**، تقدم تجربة تفاعلية عبر واجهة CLI مصممة باحتراف، وتدعم كلا من اللغة **العربية** و**الإنجليزية**. لمن يبحث عن صيانة آمنة ومرنة لأجهزته.
 
 ---
 
 ## ✨ المميزات
+
 - ✅ واجهة CLI تفاعلية ثنائية اللغة (عربي / إنجليزي)
 - 🔒 نظام قفل ذكي يمنع التشغيل المتزامن
 - 🧠 تنظيف النظام من الملفات المؤقتة وذاكرة التخزين
@@ -25,11 +27,13 @@ Cleanbuntu هي أداة صيانة شاملة لأنظمة Ubuntu/Linux مكت�
 ---
 
 ## 🚀 التثبيت السريع
+
 ```bash
 sudo bash install.sh
 ```
 
 📝 سيقوم المثبّت بـ:
+
 - إنشاء المجلدات الأساسية
 - حفظ الإعدادات في `~/.config/cleanbuntu`
 - نسخ الملفات التشغيلية
@@ -42,11 +46,13 @@ sudo bash install.sh
 يوفر Cleanbuntu أوامر سريعة مرنة تتيح تنفيذ المهام مباشرة من الطرفية، دون الحاجة للدخول إلى الواجهة التفاعلية. هذه الأوامر مثالية للمستخدمين المتقدمين أو للدمج مع مهام مجدولة (cron jobs) أو سكربتات خارجية.
 
 بعد التثبيت:
+
 ```bash
 sudo cleanbuntu
 ```
 
 أو عبر الأوامر السريعة:
+
 ```bash
 cleanbuntu --clean       # تنظيف النظام
 cleanbuntu --update      # تحديث الحزم
@@ -61,6 +67,7 @@ cleanbuntu --health      # فحص الحالة العامة
 ## 🗂️ هيكل الملفات
 
 يُفضل الحفاظ على هذا الترتيب للملفات ضمن بنية المشروع لضمان عمل الأداة بشكل صحيح، حيث أن كل ملف يؤدي دورًا محددًا في تسلسل التنفيذ والوظائف.
+
 ```
 .
 ├── main.sh               # نقطة البداية الرئيسية
@@ -77,6 +84,7 @@ cleanbuntu --health      # فحص الحالة العامة
 ---
 
 ## 🧠 متطلبات التشغيل
+
 - نظام Ubuntu أو مشتقاته (يدعم أيضًا توزيعات أخرى بشكل جزئي)
 - Bash 4+
 - أوامر أساسية: `tar`, `rsync`, `du`, `pv`, `lspci`, `sensors`
@@ -85,20 +93,23 @@ cleanbuntu --health      # فحص الحالة العامة
 ---
 
 ## 🪪 الترخيص
+
 تم إصدار Cleanbuntu تحت رخصة [MIT License](LICENSE) – حر للاستخدام، التعديل، والنشر مع الحفاظ على حقوق المؤلف.
 
 ---
 
 ## 👨‍💻 المطور
+
 **Fahad Alsharari**  
 💼 https://FahadAlsharari.sa  
-📬 admin@FahadAlsharari.sa  
+📬 admin@FahadAlsharari.sa
 
 تابعني على GitHub: [github.com/FahadSalehAlsharari](https://github.com/FahadSalehAlsharari)
 
 ---
 
 ## 🌟 هل أعجبتك الأداة؟
+
 ادعمني بنجمة ⭐ على GitHub، وساهم بتطويرها، أو شاركها مع من يهتم بأدوات الصيانة الاحترافية على لينكس.
 
 ---
@@ -116,11 +127,13 @@ cleanbuntu --health      # فحص الحالة العامة
 ---
 
 ## 📌 Overview
+
 Cleanbuntu is a comprehensive maintenance tool for Ubuntu/Linux systems written entirely in **Bash**, offering an interactive experience through a professionally designed CLI interface, supporting both **Arabic** and **English**. For those seeking safe and flexible maintenance for their devices.
 
 ---
 
 ## ✨ Features
+
 - ✅ Bilingual interactive CLI interface (Arabic / English)
 - 🔒 Smart locking system to prevent concurrent execution
 - 🧠 System cleanup from temporary files and cache
@@ -134,11 +147,13 @@ Cleanbuntu is a comprehensive maintenance tool for Ubuntu/Linux systems written 
 ---
 
 ## 🚀 Quick Installation
+
 ```bash
 sudo bash install.sh
 ```
 
 📝 The installer will:
+
 - Create essential directories
 - Save settings in `~/.config/cleanbuntu`
 - Copy operational files
@@ -151,11 +166,13 @@ sudo bash install.sh
 Cleanbuntu provides flexible quick commands that allow tasks to be executed directly from the terminal, without needing to enter the interactive interface. These commands are ideal for advanced users or for integration with cron jobs or external scripts.
 
 After installation:
+
 ```bash
 sudo cleanbuntu
 ```
 
 Or via quick commands:
+
 ```bash
 cleanbuntu --clean       # System cleanup
 cleanbuntu --update      # Package update
@@ -166,19 +183,21 @@ cleanbuntu --health     # Check general status
 ```
 
 ## 👨‍💻 Developer
+
 **Fahad Alsharari**  
 💼 https://FahadAlsharari.sa  
-📬 admin@FahadAlsharari.sa  
+📬 admin@FahadAlsharari.sa
 
 Follow me on GitHub: [github.com/FahadSalehAlsharari](https://github.com/FahadSalehAlsharari)
 
 ---
 
 ## 🪪 License
+
 Released under [MIT License](LICENSE) – free to use, modify, and distribute while maintaining copyright.
 
 ---
 
 ## 🌟 Like the Tool?
-Support with a ⭐ on GitHub, contribute to its development, or share it with those interested in professional Linux maintenance tools.
 
+Support with a ⭐ on GitHub, contribute to its development, or share it with those interested in professional Linux maintenance tools.
