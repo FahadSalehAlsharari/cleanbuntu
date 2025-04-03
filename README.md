@@ -2,7 +2,7 @@
 
 > أداة صيانة ذكية وتفاعلية تدعم العربية والإنجليزية.
 
-![Cleanbuntu Screenshot](assets/screenshot.png)
+![Cleanbuntu Screenshot](screenshot.svg)
 
 ---
 
@@ -122,7 +122,7 @@ cleanbuntu --health      # فحص الحالة العامة
 
 > A smart and interactive maintenance tool with Arabic and English support.
 
-![Cleanbuntu Screenshot](assets/screenshot.png)
+![Cleanbuntu Screenshot](screenshot.svg)
 
 ---
 
