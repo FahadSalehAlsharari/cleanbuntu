@@ -6,26 +6,31 @@
 # Function to show header
 show_header() {
     clear
-    local version="2.0.0"
+    local version="1.0.0"
 
-    echo -e "${BOLD}${GREEN}┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓${NC}"
-    echo -e "${BOLD}${GREEN}┃                  ${CYAN}CLEANBUNTU DESKTOP MAINTENANCE TOOLKIT${GREEN}                  ┃${NC}"
-    echo -e "${BOLD}${GREEN}┃                              ${YELLOW}Version $version${GREEN}                              ┃${NC}"
-    echo -e "${BOLD}${GREEN}┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛${NC}"
+    : "${BOLD:=\\033[1m}" "${BLUE:=\\033[0;34m}" "${GREEN:=\\033[0;32m}" "${YELLOW:=\\033[0;33m}" "${CYAN:=\\033[0;36m}" "${NC:=\\033[0m}"
 
-    # Show Arabic header if Arabic is selected
+    echo -e "${BOLD}${BLUE}=======================================================================${NC}"
+    echo -e "${BOLD}${CYAN}           C L E A N B U N T U   D E S K T O P   T O O L K I T           ${NC}"
+    echo -e "${BOLD}${YELLOW}                         -- Version ${version} --                         ${NC}"
+
     if [ "$LANGUAGE" == "ar" ]; then
-        echo -e "${BOLD}${BLUE}━━━━━━━━━━━━━ أداة صيانة سطح المكتب لنظام أوبونتو ━━━━━━━━━━━━━${NC}"
-    else
-        echo -e "${BOLD}${BLUE}━━━━━━━━━━━━━ Ubuntu Desktop Maintenance Toolkit ━━━━━━━━━━━━━${NC}"
+        echo -e "${BOLD}${GREEN}               -= أداة صيانة سطح المكتب لنظام أوبونتو =-              ${NC}"
     fi
 
-    # Show a random quote
-    echo -e "${YELLOW}$(get_random_quote)${NC}"
-    echo -e "${SEPARATOR}"
+    echo -e "${BOLD}${BLUE}=======================================================================${NC}"
+    echo
 
-    # Show current date and time in BOLD WHITE
-    echo -e "${BOLD}${NC}$(date +"%Y-%m-%d %H:%M:%S")${NC}"
+    if command -v get_random_quote >/dev/null 2>&1; then
+      echo -e "${YELLOW}$(get_random_quote)${NC}"
+    else
+      echo -e "${YELLOW}$([ "$LANGUAGE" == "ar" ] && echo "تذكر دائماً: حافظ على نظافة نظامك!" || echo "Remember: Keep your system clean!")${NC}"
+    fi
+
+    echo -e "-----------------------------------------------------------------------"
+
+    local WHITE='\033[1;37m'
+    echo -e "${BOLD}${WHITE}$(date +"%Y-%m-%d %H:%M:%S")${NC}"
     echo
 }
 
